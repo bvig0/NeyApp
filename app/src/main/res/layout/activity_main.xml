@@ -1,20 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:id="@+id/imgNegoney"
-        android:scaleType="centerCrop"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/negoney"
-        android:background="#666"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical">
 
 
-</RelativeLayout>
+        <ImageView
+
+            android:id="@+id/imgBlusa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#2464D5"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/blusabaskas" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imgBlusa"
+            android:layout_toEndOf="@+id/imgBlusa"
+
+            android:background="#0000FF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iconloja" />
+
+        <ImageView
+
+            android:id="@+id/imgPessoa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imgIcon"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-25dp"
+            android:background="#0047FB"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pessoabaskas" />
+
+        <ImageView
+
+            android:id="@+id/imgTicket"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imgIcon"
+            android:layout_toEndOf="@+id/imgIcon"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="-25dp"
+            android:background="#00B3FF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ticketbaskas" />
+
+        <ImageView
+
+            android:id="@+id/imgCesta"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:background="#0048FF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cestabaskas" />
+
+    </RelativeLayout>
+
+</LinearLayout>
