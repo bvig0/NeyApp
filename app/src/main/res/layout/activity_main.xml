@@ -15,25 +15,24 @@
 
 
         <ImageView
-
-            android:id="@+id/imgBlusa"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="#2464D5"
-
-            android:scaleType="centerCrop"
-            android:src="@drawable/blusabaskas" />
-
-        <ImageView
             android:id="@+id/imgIcon"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/imgBlusa"
-            android:layout_toEndOf="@+id/imgBlusa"
-
+            android:layout_centerInParent="true"
             android:background="#0000FF"
             android:scaleType="centerCrop"
             android:src="@drawable/iconloja" />
+
+        <ImageView
+            android:id="@+id/imgBlusa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imgIcon"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-275dp"
+            android:background="#2464D5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blusabaskas" />
 
         <ImageView
 
@@ -41,8 +40,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_below="@+id/imgIcon"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-30dp"
             android:background="#0047FB"
             android:scaleType="centerCrop"
             android:src="@drawable/pessoabaskas" />
@@ -53,10 +52,10 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_below="@+id/imgIcon"
-            android:layout_toEndOf="@+id/imgIcon"
-            android:layout_marginLeft="-25dp"
-            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="-30dp"
             android:layout_marginRight="-25dp"
+            android:layout_toEndOf="@+id/imgIcon"
             android:background="#00B3FF"
             android:scaleType="centerCrop"
             android:src="@drawable/ticketbaskas" />
@@ -66,9 +65,9 @@
             android:id="@+id/imgCesta"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="-25dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="30dp"
             android:layout_toRightOf="@+id/imgIcon"
             android:background="#0048FF"
             android:scaleType="centerCrop"
